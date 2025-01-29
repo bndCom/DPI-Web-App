@@ -1,0 +1,24 @@
+<div class="like-body">
+
+   
+
+    <div class="non-header">
+    
+
+
+    <div class="container">
+        <h2 class="consultation">Diagnostiques</h2>
+<div class="consultaion-box-container">
+    @for (diagnostic of diagnostics; track diagnostic.id_diagnostic) {
+        <app-diagnostic-box [ID]="diagnostic.id_diagnostic.toString()"></app-diagnostic-box>
+    }
+    
+ 
+ </div>
+</div>
+</div>
+
+<button (click)="newDiag()" class="nouvelleConsultation">Nouveau Diagnostique</button>
+ 
+ 
+</div>
